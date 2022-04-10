@@ -1,0 +1,15 @@
+service: serverless-bert-ner-docker
+
+provider:
+  name: aws # provider
+  region: us-east-1 # aws region
+  memorySize: 3008 # optional, in MB, default is 1024
+  timeout: 30 # optional, in seconds, default is 6
+
+functions:
+  questionanswering:
+    image: 334847460589.dkr.ecr.us-east-1.amazonaws.com/bert-ner@sha256:d3b2da76ae4e1dd41bfadf1f63b1c17937ea9fb5eb45160290a85a290fb927b3 #ecr url
+    events:
+      - http:
+          path: ner # http path
+          method: post # http method
