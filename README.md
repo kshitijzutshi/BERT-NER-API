@@ -48,6 +48,11 @@ Following steps can be done to integrate the REST API response to get the UI on 
 
 https://blog.jcharistech.com/2019/11/28/summarizer-and-named-entity-checker-app-with-streamlit-and-spacy/
 
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/13203059/162646505-95d264a7-9c31-40dc-832f-948978766d39.png)
+
+
 # References
 
 https://github.com/philschmid/serverless-bert-huggingface-aws-lambda-docker
